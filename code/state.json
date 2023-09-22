@@ -1,0 +1,46 @@
+{
+    "General": {
+        "doc1": {
+            "waitlist": [
+                "token1"
+            ],
+            "current": "token1",
+            "presence": true,
+            "length_of_waitlist": 1
+        },
+        "doc2": {
+            "waitlist": [
+                "token2",
+                "token4"
+            ],
+            "current": "token2",
+            "presence": true,
+            "length_of_waitlist": 2
+        },
+        "doc5": {
+            "waitlist": [
+                "token5",
+                "token6"
+            ],
+            "current": null,
+            "presence": false,
+            "length_of_waitlist": 2
+        }
+    },
+    "Cardiology": {
+        "doc3": {
+            "waitlist": [
+                "token3"
+            ],
+            "current": "token3",
+            "presence": true,
+            "length_of_waitlist": 1
+        },
+        "doc4": {
+            "waitlist": [],
+            "current": null,
+            "presence": true,
+            "length_of_waitlist": 0
+        }
+    }
+}
