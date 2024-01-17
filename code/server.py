@@ -22,16 +22,16 @@ def doctor_in(dept, doc):
     return f"{doc} in - {trial.state[dept][doc]['current']} is the current patient"
 
 
-@app.route("/add-patient/<dept>")
-def add_patient(dept):
-    doc = trial.get_doc(dept)
+@app.route("/add-patient/<dept>/<disease>")
+def add_patient(dept, disease):
+    doc = trial.get_doc(dept, disease)
     token = trial.add_patient(dept, doc)
     return f"{token} is the token"
 
 
 @app.route("/add-patient/<dept>/<doc>")
 def add_patient_doc(dept, doc):
-    token = trial.add_patient(dept, doc)
+    token = trial.add_patient(dept, doc=doc)
     return f"{token} is the token"
 
 
